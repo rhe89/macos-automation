@@ -9,7 +9,6 @@ defaults write com.apple.dock "autohide" -bool true # Autohide
 defaults write com.apple.dock "autohide-delay" -float "0" # Disable delay on mouse over
 defaults write com.apple.dock expose-group-apps -bool true # Groups windows by application on mission control
 defaults write com.apple.dock "mru-spaces" -bool false # Disable rearrange Spaces automatically
-defaults write com.apple.dock "show-recents" -bool false # Disable recents
 
 # Finder
 defaults write com.apple.finder "AppleShowAllFiles" -bool true # Show hidden files
@@ -67,6 +66,6 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false # disables "c
 defaults write -g KeyRepeat -int 2 # key repeat rate: fast
 defaults write -g InitialKeyRepeat -int 15 # delay until repeat: short
 
-killall Dock && killall Finder && killall SystemUIServer
+killall Finder && killall SystemUIServer
 
 echo "import-defaults done"
